@@ -2,26 +2,377 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* ================first group */
+.mother {
+  top: 8rem;
+  right: 28rem;
+  position: absolute;
+}
+
+.box {
+  position: relative;
+  width: 9rem;
+  height: 9.5rem;
+  background: #282c33;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-image: conic-gradient(transparent,
+      transparent,
+      transparent,
+      #00ccff);
+  animation: animate 4s linear infinite;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-image: conic-gradient(#ffd700, #276221, #abb2bf, #d400d4);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+.box span {
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: #282c33;
+  z-index: 1;
+}
+
+/*  */
+.square {
+  position: relative;
+  width: 9rem;
+  height: 9.5rem;
+  background: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.square::before {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-image: conic-gradient(transparent,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      transparent,
+      #00ccff);
+  animation: animate 4s linear infinite;
+}
+
+.square::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-image: conic-gradient(#ffd700, #276221, #abb2bf, #d400d4);
+  animation: animate 4s linear infinite;
+  animation-direction: reverse;
+  animation-delay: -2s;
+}
+
+.square span {
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: #282c33;
+  z-index: 1;
+}
+
+.box-mother {
+  top: 12rem;
+  right: 34rem;
+  position: absolute;
+}
+
+/* =======================end of first group */
+
+
+
+/* ========================second group */
+/* circle */
+.circle-mother {
+  top: 7rem;
+  right: 12rem;
+  position: absolute;
+}
+
+.circle {
+  position: relative;
+  width: 9rem;
+  height: 9.5rem;
+  background: #282c33;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-image: conic-gradient(transparent,
+      transparent,
+      transparent,
+      #00ccff);
+  animation: animate 4s linear infinite;
+}
+
+.circle::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-image: conic-gradient(#ffd700, #276221, #abb2bf, #d400d4);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle span {
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: #282c33;
+  z-index: 1;
+}
+
+/* tri */
+.tri-mother {
+  top: 11rem;
+  right: 18rem;
+  position: absolute;
+}
+
+.tri {
+  position: relative;
+  width: 9rem;
+  height: 9.5rem;
+  background: #282c33;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tri::before {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-image: conic-gradient(transparent,
+      transparent,
+      transparent,
+      #00ccff);
+  animation: animate 4s linear infinite;
+}
+
+.tri::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-image: conic-gradient(#ffd700, #276221, #abb2bf, #d400d4);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tri span {
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: #282c33;
+  z-index: 1;
+}
+
+/* button */
+.btn {
+  top: 3.5rem;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  font-size: 0.90rem;
+  font-weight: lighter;
+  color: #abb2bf;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  transform: (-50px, -50px);
+  overflow: hidden;
+  border-radius: 0.2rem;
+  background: transparent;
+  box-shadow: 0 20px 50px #282c33;
+}
+
+.btn::before {
+  position: absolute;
+  width: 40px;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  content: '';
+  border-radius: 0.2rem;
+  background: rgb(142 255 240 / 10%);
+}
+
+.btn span:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  border-radius: 0.2rem;
+  background: linear-gradient(to right, #abb2bf, #c778dd);
+  animation: animate1 4s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.btn span:nth-child(2) {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 0.2rem;
+  background: linear-gradient(to bottom, #ffd700, #276221);
+  animation: animate2 4s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.btn span:nth-child(3) {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.2rem;
+  background: linear-gradient(to left, #276221, #34ffea);
+  animation: animate3 4s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.btn span:nth-child(4) {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.2rem;
+  background: linear-gradient(to top, #002b9d, #c30010);
+  animation: animate4 4s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+/* ============= media queries */
+@media screen and (max-width: 1244px) {
+  .mother {
+    top: 5rem;
+    right: 24rem;
+    position: absolute;
+  }
+
+  .box-mother {
+    top: 8rem;
+    right: 30rem;
+    position: absolute;
+  }
 }

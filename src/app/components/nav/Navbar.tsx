@@ -3,11 +3,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { navLinks, NavLink, socialLinks, SocialLinks } from '../../../data'
+import { navLinks, NavLink, socialLinks, SocialLinks } from '../../../../data'
 import { useState, useEffect } from 'react'
 
 import { RiMenu3Fill } from 'react-icons/ri'
-import logo from '../assets/olas.png'
+import logo from '../../assets/olas.png'
 import MobileNav from './MobileNav'
 
 export default function Navbar() {
@@ -19,7 +19,6 @@ export default function Navbar() {
   const handleOpen = () => {
     setIsOpen(!isOpen)
   }
-
 
   // change properties on scroll
   useEffect(() => {
@@ -35,8 +34,6 @@ export default function Navbar() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
-
-  
 
   return (
     <nav
@@ -94,12 +91,12 @@ export default function Navbar() {
           </select>
         </div>
         <button className="block lg:hidden" onClick={handleOpen}>
-          <RiMenu3Fill style={{ fontSize: '1.5rem', color:'#abb2bf' }} />
+          <RiMenu3Fill style={{ fontSize: '1.5rem', color: '#abb2bf' }} />
         </button>
       </div>
 
       {/* mobile nav */}
-      <MobileNav isOpen={isOpen} setIsOpen={setIsOpen}/>
+      <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />
     </nav>
   )
 }

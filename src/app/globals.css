@@ -18,6 +18,7 @@ html {
   top: 8rem;
   right: 28rem;
   position: absolute;
+  z-index: -10;
 }
 
 .box {
@@ -83,6 +84,7 @@ html {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: -10;
 }
 
 .square::before {
@@ -120,6 +122,7 @@ html {
   top: 12rem;
   right: 34rem;
   position: absolute;
+  z-index: -10;
 }
 
 /* =======================end of first group */
@@ -132,6 +135,7 @@ html {
   top: 7rem;
   right: 12rem;
   position: absolute;
+  z-index: -10;
 }
 
 .circle {
@@ -191,6 +195,7 @@ html {
   top: 11rem;
   right: 18rem;
   position: absolute;
+  z-index: -10;
 }
 
 .tri {
@@ -247,10 +252,13 @@ html {
 
 /* button */
 .btn {
-  top: 3.5rem;
+  top: 0;
   left: 0;
   width: fit-content;
   height: fit-content;
+  display: flex;
+  align-items:center;
+  gap: 0.15rem;
   font-size: 0.90rem;
   font-weight: lighter;
   color: #abb2bf;
@@ -260,7 +268,7 @@ html {
   overflow: hidden;
   border-radius: 0.2rem;
   background: transparent;
-  box-shadow: 0 20px 50px #282c33;
+  /* box-shadow: 0 20px 50px #c778dd; */
 }
 
 .btn::before {
@@ -361,18 +369,214 @@ html {
   }
 }
 
+/* ============================quote */
+/* tri */
+.quote-mother {
+  top: 3rem;
+  right: -3rem;
+  position: absolute;
+}
+
+/* @media screen and (max-width:600px) {
+  .quote-mother {
+    display: none;
+  }
+} */
+
+.quote {
+  position: relative;
+  width: 9rem;
+  height: 9.5rem;
+  background: #282c33;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.quote::before {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-image: conic-gradient(transparent,
+      transparent,
+      transparent,
+      #00ccff);
+  animation: animate 4s linear infinite;
+}
+
+.quote::after {
+  content: '';
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  background-image: conic-gradient(#ffd700, #276221, #abb2bf, #d400d4);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.quote span {
+  position: absolute;
+  inset: 2px;
+  border-radius: 16px;
+  background: #282c33;
+  z-index: 1;
+}
+
+
 
 /* ============= media queries */
-@media screen and (max-width: 1244px) {
+@media screen and (max-width: 1245px) {
   .mother {
-    top: 5rem;
-    right: 24rem;
+    top: 20rem;
+    right: 10rem;
+  }
+
+  .box-mother {
+    top: 25rem;
+    right: 7rem;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .mother {
+    top: 20rem;
+    right: 10rem;
+  }
+
+  .box-mother {
+    top: 25rem;
+    right: 7rem;
+  }
+
+  .circle-mother {
+    top: 20rem;
+    right: 13rem;
+  }
+
+  .tri-mother {
+    top: 25rem;
+    right: 17rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .mother {
+    top: 15rem;
+    right: 15rem;
+  }
+
+  .box-mother {
+    top: 22rem;
+    right: 13rem;
+  }
+
+  .circle-mother {
+    top: 20rem;
+    right: 10rem;
+  }
+
+  .tri-mother {
+    top: 25rem;
+    right: 6rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .mother {
+    top: 15rem;
+    right: 10rem;
+  }
+
+  .box-mother {
+    top: 22rem;
+    right: 13rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mother {
+    top: 25rem;
+    left: 10rem;
+
+  }
+
+  .box-mother {
+    top: 28rem;
+    left: 7rem;
+
+  }
+
+  .circle-mother {
+    top: 30rem;
+    left: 18rem;
+
+  }
+
+  .tri-mother {
+    top: 33rem;
+    left: 6rem;
+
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .mother {
+    display: none;
+
+  }
+
+  .box-mother {
+    display: none;
+
+  }
+
+  .circle-mother {
+    display: none;
+
+  }
+
+  .tri-mother {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mother {
+    top: 27rem;
+    left: 7rem;
     position: absolute;
   }
 
   .box-mother {
-    top: 8rem;
-    right: 30rem;
+    top: 31rem;
+    left: 2rem;
+    position: absolute;
+  }
+
+  .circle-mother {
+    top: 37rem;
+    right: 3rem;
+    position: absolute;
+  }
+
+  .tri-mother {
+    top: 40rem;
+    left: 6rem;
     position: absolute;
   }
 }

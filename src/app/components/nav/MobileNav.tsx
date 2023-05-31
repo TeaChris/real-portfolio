@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { navLinks, NavLink, socialLinks, SocialLinks } from '../../../data'
+import { navLinks, NavLink, socialLinks, SocialLinks } from '../../../../data'
 
 import { motion } from 'framer-motion'
 import { GrClose } from 'react-icons/gr'

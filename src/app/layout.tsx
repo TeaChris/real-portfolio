@@ -1,6 +1,6 @@
-import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Navbar from './components/nav/Navbar'
 import Socials from './components/Socials'
-import Footer from './components/footer'
 import './globals.css'
 import { Fira_Mono } from 'next/font/google'
 

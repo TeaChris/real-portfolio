@@ -37,7 +37,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`w-full h-16 bg-background grid place-items-center z-10 top-0 left-0 fixed ${
+      className={`w-full h-16 bg-background grid place-items-center z-50 top-0 left-0 fixed ${
         isScrolled ? 'shadow-black shadow-md' : ''
       }`}
     >

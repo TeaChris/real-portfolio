@@ -257,7 +257,7 @@ html {
   width: fit-content;
   height: fit-content;
   display: flex;
-  align-items:center;
+  align-items: center;
   gap: 0.15rem;
   font-size: 0.90rem;
   font-weight: lighter;
@@ -375,13 +375,14 @@ html {
   top: 3rem;
   right: -3rem;
   position: absolute;
+  z-index: -10
 }
 
-/* @media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
   .quote-mother {
     display: none;
   }
-} */
+}
 
 .quote {
   position: relative;

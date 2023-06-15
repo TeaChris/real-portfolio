@@ -3,7 +3,7 @@ import quote from '../../assets/quote.svg'
 
 export default function Quote() {
   return (
-    <section className="w-full lg:h-fit py-16 relative mt-20">
+    <section className="w-full lg:h-fit py-16 relative mt-4 md:mt-20">
       <div className="w-wsm mx-auto md:w-wmd md:mx-auto lg:w-wl lg:mx-auto grid place-items-center z-50">
         <Image
           src={quote}
@@ -15,14 +15,14 @@ export default function Quote() {
           alt="quote"
           className="hidden lg:absolute lg:top-[6.3rem] lg:right-[26rem]"
         />
-        <div className="flex flex-col items-end gap-0 z-50">
+        <div className="flex flex-col items-end gap-0">
           {/* quote */}
-          <div className="w-fit h-fit py-3 px-20 border border-gray grid place-items-center z-50">
+          <div className="w-full lg:w-fit h-fit py-3 px-20 border border-gray grid place-items-start lg:place-items-center">
             <h6 className="text-lg text-gray">
               code, craft, empower: web development journey.
             </h6>
           </div>
-          <div className="w-fit h-fit py-3 px-4 border border-gray grid place-items-center z-50">
+          <div className="w-fit h-fit py-3 px-4 border border-gray grid place-items-center">
             <h6 className="text-lg text-gray">Sunkanmi</h6>
           </div>
         </div>

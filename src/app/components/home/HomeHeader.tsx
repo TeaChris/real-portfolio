@@ -9,18 +9,18 @@ import dots from '../../assets/Dots.png'
 
 export default function HomeHeader() {
   return (
-    <header className="w-full h-[55rem] lg:h-[30rem] mt-36 lg:mt-20">
+    <header className="w-full h-[40rem] lg:h-[30rem] mt-20">
       <div className="w-wsm mx-auto h-full grid grid-cols-1 gap-0 items-center md:w-wmd md:mx-auto md:h-full lg:w-wlg lg:mx-auto lg:grid lg:grid-cols-2 lg:items-center lg:justify-between lg:h-full">
         {/* left  */}
         <div className="w-full h-fit flex flex-col items-start gap-8">
           <h2 className="w-full text-2xl md:text-4xl">
-            Sunkanmi is a <span className="text-primary">mobile</span> and{' '}
-            <span className="text-primary">web app</span>{' '}
-            <span className="text-primary">frontend developer.</span>
+            Sunkanmi is a{' '}
+            <span className="text-primary">frontend developer</span> and{' '}
+            <span className="text-primary">ux engineer</span>{' '}
           </h2>
           <div className="w-full h-fit flex flex-col items-start gap-3 relative">
             <p className="text-sm text-gray">
-              He crafts responsive websites where technologies meet creativity.
+              I craft responsive websites where technologies meet creativity.
             </p>
             <div className="w-44 relative bg-black">
               <Button text="">
@@ -47,7 +47,7 @@ export default function HomeHeader() {
           <Image
             src={dots}
             alt="dots"
-            className="right-28 bottom-12 lg:right-32 lg:bottom-4 absolute z-50"
+            className="right-28 bottom-12 lg:right-32 lg:bottom-4 absolute z-10"
           />
         </div>
         {/* 1 */}

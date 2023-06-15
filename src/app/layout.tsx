@@ -2,19 +2,20 @@ import Footer from './components/Footer'
 import Navbar from './components/nav/Navbar'
 import Socials from './components/Socials'
 import './globals.css'
+
 import { Fira_Mono } from 'next/font/google'
+import ToasterContext from './context/ToasterContext'
 
 const fira = Fira_Mono({
   weight: '400',
-  display: 'swap',
+  // display: 'swap',
   subsets: ['latin'],
 })
 
 export const metadata = {
   title:
     'OlasunkanBolu: Creating engaging websites with stunning designs and seamless functionality for optimal user experiences',
-  description:
-    'Welcome to my portfolio! I am a skilled and passionate web developer, dedicated to creating stunning and functional websites. With expertise in HTML, CSS, JavaScript, and modern frameworks, I bring your visions to life. Whether you need a responsive website, interactive web applications, or e-commerce solutions, I deliver tailored solutions that exceed expectations. Explore my portfolio to see my diverse range of projects and let`s collaborate to turn your ideas into reality',
+  description: 'frontend Developer & UX Engineer',
 }
 
 export default function RootLayout({
@@ -25,8 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-background text-white overflow-x-hidden relative ${fira.className}`}
+        className={`${fira.className} bg-background text-white overflow-x-hidden relative`}
       >
+        <ToasterContext />
         <Navbar />
         <Socials />
         {children}

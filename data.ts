@@ -17,7 +17,6 @@ export const navLinks: NavLink[] = [
   { id: 2, title: 'works', url: '/work' },
   { id: 3, title: 'resume', url: '/resume' },
   { id: 4, title: 'contact', url: '/contact' },
-  { id: 5, title: 'blog', url: '/blog' },
 ]
 
 // social links

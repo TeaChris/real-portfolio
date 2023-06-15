@@ -27,21 +27,21 @@ export default function Skills() {
           </div>
 
           {/* right */}
-          <div className="w-full h-fit flex flex-col items-center gap-4  md:w-full md:flex md:flex-row lg:w-[45%] lg:flex lg:flex-row lg:items-start lg:gap-4">
-            <div className="w-36 h-fit py-2 border border-gray ">
+          <div className="w-full h-fit flex flex-col items-start gap-4  md:w-full md:flex md:flex-row lg:w-[45%] lg:flex lg:flex-row lg:items-start lg:gap-4">
+            <div className=" w-56 lg:w-36 h-fit py-2 border border-gray ">
               <div className="w-full h-fit px-2">
                 <h6 className="capitalize">languages</h6>
               </div>
               <div className="w-full h-fit mt-2 border-t px-2">
                 <span className="text-xs capitalize text-gray">
-                  typescript javascript
+                  typescript javascript python
                 </span>
               </div>
             </div>
 
             {/* middle */}
-            <div className="md:flex md:flex-col md:items-center md:gap-3">
-              <div className="w-36 h-fit py-2 border border-gray">
+            <div className="flex items-start gap-3 md:flex md:flex-col md:items-center">
+              <div className="w-36 h-40 lg:h-fit py-2 border border-gray">
                 <div className="w-full h-fit px-2">
                   <h6 className="capitalize">database</h6>
                 </div>
@@ -53,22 +53,22 @@ export default function Skills() {
               </div>
 
               {/* second */}
-              <div className="w-36 h-fit py-2 border border-gray">
+              <div className="w-44 h-40 md:36 md:h-fit py-2 border border-gray">
                 <div className="w-full h-fit px-2">
                   <h6 className="text-white capitalize">others</h6>
                 </div>
                 <div className="w-full h-fit mt-2 border-t-gray px-2">
                   <span className="text-xs capitalize text-gray">
                     HTML css scss tailwind styled-component strapi css-in-js
-                    bootstrap mui
+                    bootstrap MUI
                   </span>
                 </div>
               </div>
             </div>
 
             {/* third */}
-            <div className="md:flex md:flex-col md:items-center md:gap-3">
-              <div className="w-36 h-fit py-2 border border-gray">
+            <div className="flex items-start gap-3 md:flex md:flex-col md:items-center">
+              <div className="w-44 h-fit py-2 border border-gray">
                 <div className="w-full h-fit px-2">
                   <h6 className="capitalize">tools</h6>
                 </div>
